@@ -232,7 +232,10 @@ main .hero-content {
 @media (max-width: 992px) {
   main .hero-content {
     grid-template-columns: 1fr;
-    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 0 1rem;
   }
