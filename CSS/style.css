@@ -17,9 +17,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
-  overflow-x: hidden !important;
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important; 
+    overflow-y: auto !important; 
+    height: 100%;
 }
 
 html {
@@ -48,6 +51,7 @@ body {
 /* circle decoration animation */
 .section-decor {
   position: relative;
+  overflow-x: hidden;
   .decor-circle {
     position: absolute;
     border-radius: 50%;
@@ -67,7 +71,7 @@ body {
   @media (max-width: 768px) {
     .section-decor .decor-circle,
     .section-decor .decor-dot {
-      display: none; /* أو قلل حجمها أو عدّل موقعها */
+      display: none;
     }
   }
 }
@@ -206,11 +210,14 @@ main .hero {
     var(--primary-color),
     var(--secondary-color)
   );
-  min-height: calc(100vh - 57.2px);
-  margin-top: 57.2px;
+  /* min-height: calc(100vh - 57.2px); */
+  /* margin-top: 57.2px; */
+  min-height: 100vh;
+  padding-top: 57.2px;
   padding: 2rem;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 main .hero-content {
