@@ -232,14 +232,14 @@ main .hero-content {
 @media (max-width: 992px) {
   main .hero-content {
     grid-template-columns: 1fr;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
     padding: 0 1rem;
   }
 }
 
 main .hero-text h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--bg-main);
   margin-bottom: 1.5rem;
