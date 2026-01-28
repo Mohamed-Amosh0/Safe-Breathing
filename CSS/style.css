@@ -17,7 +17,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   overflow-x: hidden !important;
 }
 
@@ -556,6 +557,7 @@ main .center-label span {
   background-color: var(--bg-main);
   position: relative;
   background: linear-gradient(135deg, var(--bg-main), #e0f2fe);
+  overflow-x: hidden;
   padding: 6rem 0;
   .section-title {
     font-size: 2.6rem;
@@ -584,7 +586,6 @@ main .center-label span {
     color: var(--text-muted);
     max-width: 500px;
   }
-
   .use-case-img {
     max-width: 100%;
     height: auto;
@@ -632,27 +633,32 @@ main .center-label span {
 /* Use Cases Ens */
 /* Footer Start */
 .site-footer {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   color: var(--bg-card);
   padding: 4rem 2rem;
 }
 
-.site-footer h2, .site-footer h4 {
+.site-footer h2,
+.site-footer h4 {
   color: var(--bg-card);
   margin-bottom: 1rem;
 }
-.site-footer h2{
-  a{
+.site-footer h2 {
+  a {
     text-decoration: none;
     color: var(--bg-main);
     transition: color 0.3s ease-in-out;
-    &:hover{
+    &:hover {
       color: var(--navbar-link-hover);
     }
   }
 }
 .site-footer p {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
   max-width: 250px;
 }
@@ -664,11 +670,11 @@ main .center-label span {
 
 .site-footer ul li {
   margin-bottom: 0.5rem;
-  color: rgba(255,255,255,0.85); /* للنص العادي */
+  color: rgba(255, 255, 255, 0.85); /* للنص العادي */
 }
 
 .site-footer ul li a {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -680,7 +686,7 @@ main .center-label span {
 
 .footer-bottom {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
